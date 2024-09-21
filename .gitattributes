@@ -1,0 +1,19 @@
+# Auto-detect text files and set LF or CRLF line endings
+* text=auto
+
+# Define file types that should always have LF (Unix style)
+*.sh text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+
+# Define file types that should always have CRLF (Windows style)
+*.bat text eol=crlf
+
+# # Add .gitattributes file to the staging area
+# git add .gitattributes
+
+# # Normalize all the files according to the .gitattributes rules
+# git add --renormalize .
+
+# # Commit the changes
+# git commit -m "Normalize line endings"
